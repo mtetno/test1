@@ -1,0 +1,32 @@
+==============================================================
+Base Api    : http://reactjs-boot-app.mocklab.io
+Api         : /login
+Description : - Success response.
+              - Role is admin
+Body :
+{
+"email" : "validadmin@gmail.com",
+"password" : "password"
+}
+Response :
+200
+{
+  "status": "success",
+  "role": "admin"
+}
+==============================================================
+Base Api    : http://reactjs-boot-app.mocklab.io
+Api         : /login
+Description : - Success response.
+              - Role is admin
+Body :
+{
+"email" : "validadmin@gmail.com",
+"password" : "password"
+}
+Response :
+200
+{
+  "status": "success",
+  "role": "admin"
+}
