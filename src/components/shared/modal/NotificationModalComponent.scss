@@ -1,0 +1,61 @@
+.notification-modal .modal-content{
+    background:#fff;
+    border:none;
+}
+.notification-modal .modal-body{
+	padding-top:0px;
+}
+.notification-modal .main-heading{
+	padding: 10px 15px;
+	border-bottom:1px solid #ddd;
+	color:#193654;
+}
+.notification-modal .main-heading .first-head{
+	color:#193654;
+	font-weight:bold;
+	font-family: "OpenSans-Regular";
+}
+.notification-modal .main-heading .first-head span{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.notification-modal .main-heading .mark-read span{
+	vertical-align: -webkit-baseline-middle;
+    color: #A7B1BB;
+    font-size:12px;
+    float:right;
+}
+.row-color{
+    background: #ECF2FF;
+    padding: 8px 15px;
+}
+.notification-modal .right-side{
+   vertical-align: -webkit-baseline-middle;
+}
+.notification-modal .heading{
+    color: #4D5C7D;
+    font-weight: bold;
+}
+.notification-modal .heading span{
+    font-size:11px;
+    color:#9CA4B9;
+    font-weight:100;
+}
+.content-row{
+        font-size: 13px;
+    color: #77839B;
+}
+.day-row{
+    padding: 5px 15px;
+    color: #A9AFBD;
+    font-size: 11px;
+    text-transform:uppercase;
+}
+.row-simple{
+    padding: 8px 15px;
+    border-bottom:1px solid #E5E5E5;
+}
+.day-row-border{
+    border-bottom:1px solid #E5E5E5;
+
+}

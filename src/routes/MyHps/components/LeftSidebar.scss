@@ -1,0 +1,104 @@
+.main-sidenav{
+  margin-top:-20px;
+  height: 112vh;
+}
+#left-tabs-example{
+  margin-top:-20px;
+}
+.page-layout__viewport{
+  margin-bottom: 0;
+}
+.leftsidebar-container{
+  background-color: #334557;
+  height: 718px;
+  padding:0px;
+}
+.main-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  min-height: 100%;
+  width: 230px;
+  z-index: 810;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.cEyFbG{
+  padding:15px !important;
+  color: #b4c3d2 !important;
+  padding-left: 38px !important;
+}
+.cEyFbG:before{
+    content: "";
+    background: #405368;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    top: 0%;
+    height: 1px;
+    width: 79%;
+    box-shadow: 0px 1px 0 0 #192837;
+}
+.iHLtnx{
+  padding:15px !important;
+  color: #fff !important;
+}
+.nav-sec{
+  border:1px solid #fff !important;
+}
+.__rsnav___itemchild{
+    background: #192837 !important;
+    font-size: 14px;
+    text-align: left;
+    color: #b4c3d2 !important;
+    padding:10px 35px !important;
+    border-left:4px solid #8837a9;
+   
+}
+.__rsnav___itemchild:before{
+   content:none;
+}
+.kwcFda:before {
+    border-style: solid !important;
+    border-width: 0.11em 0.11em 0 0 !important;
+    content: '';
+    display: inline-block !important;
+    height: 0.50em !important;
+    left: -34px !important;
+    position: relative !important;
+    top: -4px !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    vertical-align: top !important;
+    width: 0.50em !important;
+}
+.fdIEpy:before {
+    border-style: solid !important;
+    border-width: 0.11em 0.11em 0 0 !important;
+    content: '';
+    display: inline-block !important;
+    height: 0.50em !important;
+    left: -34px !important;
+    position: relative !important;
+    top: -4px !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(135deg) !important;
+    vertical-align: top !important;
+    width: 0.50em !important;
+}
+.cRkCQa{
+  font-size:18px;
+  width: 35px !important; 
+
+}
+.__rsnav___itemchild.active{
+    color: #fff !important;
+    background-color: #192837 !important;
+}

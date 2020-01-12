@@ -1,0 +1,237 @@
+@import 'base';
+@import 'brandon-grotesque';
+@import 'open-sans';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+//colors section
+.turtle-green {
+  color: #89c053;
+}
+
+//icons
+.icon-18 {
+  font-size: 18px;
+}
+.icon-26 {
+    font-size: 26px;
+}
+.icon-30 {
+  font-size: 30px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin-tb-20 {
+  margin: 20px 0;
+}
+.margin-trb-20 {
+  margin: 20px 20px 20px 0;
+}
+.page-card:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+.page-card.active {
+  background-color: #e3e3e3;
+}
+
+/* React-autosuggest start */
+.react-autosuggest__container {
+  position: relative;
+}
+.react-autosuggest__input {
+  display: block;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  height: 34px;
+}
+.react-autosuggest__input--focused {
+  outline: none;
+}
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+.react-autosuggest__suggestion-match {
+  color: red;
+  font-weight: bold;
+}
+/* React-autosuggest end */
+
+.signin-container {
+    padding: 48px 40px 36px;
+    width: 450px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.social-login-wrapper {
+  margin: 20px 0 0 0;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.link-btn {
+  border: none;
+  padding: 6px 0;
+  color: blue;
+}
+.link-btn:hover, .link-btn:active, .link-btn:focus {
+  border: none;
+  background: none;
+  padding: 6px 0;
+  color: blue;
+  text-decoration: underline;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.help-block{
+  float: left;
+  font-size: 9px;
+}
+
+.custom-btn {
+  border-radius: 23px;
+  background-color: #273039 !important;
+  box-shadow: 10px 17.3px 20px 0 rgba(0, 0, 0, 0.2);
+  background-image:none;
+  border-color:#273039;
+  text-shadow:none;
+  font-family: 'Brandon Grotesque Medium';
+  margin: 20px 10px;
+  font-size: 14.2px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  width: 120px;
+}
+.custom-btn:focus{
+  color:#fff;
+  outline: 0px !important;
+}
+.custom-btn:hover{
+  color:#fff !important;
+  background:#3f3737
+}
+.custom-btn.turtle-green {
+  border-color:#74ab40;
+  background: #74ab40 !important;
+  box-shadow: 7px 12.124px 20px 0px rgba(0, 0, 0, 0.09);
+}
+.questionnaire-form .control-label {
+  font-family: OpenSans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  color: #092f5e;
+  margin-bottom: 20px;
+}
+.questionnaire-form .custom-group {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+}
+.questionnaire-form .form-control {
+  width: 200px;
+}
+.error {
+  color: red;
+}
+.myhps-program .panel-group {
+  margin-bottom: 0;
+}
+#basic-nav-dropdown .caret {
+    border-style: solid!important;
+    border-width: .11em .11em 0 0!important;
+    content: "";
+    display: inline-block!important;
+    height: .5em!important;
+    left: 3px!important;
+    position: relative!important;
+    top: 6px!important;
+    transform: rotate(134deg)!important;
+    vertical-align: top!important;
+    width: .5em!important;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+@import '../../node_modules/react-widgets/dist/css/react-widgets.css';
+@import "../../node_modules/video-react/dist/video-react.css";
+@import '../../node_modules/react-redux-toastr/src/styles/index';
+@import 'toastr';

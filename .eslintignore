@@ -1,0 +1,7 @@
+build/**
+server/**
+tests/**
+node_modules/**
+dist/**
+src/styles/js/**
+src/index.html

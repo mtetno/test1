@@ -1,0 +1,86 @@
+.right-aside {
+  .badge {
+    float: right;
+    background-color: #e8553e;
+    border-radius: 4px;
+    height: 22px;
+    width: 24px;
+    padding: 5px;
+  }
+  .title-wrap .title {
+    font-family: "Brandon Grotesque Regular";
+    font-size: 15px;
+    text-align: left;
+    color: #30578a;
+    text-transform: uppercase;
+  }
+  .task-wrap {
+    position: relative;
+    img.w20{
+      width:20%;
+    }
+    img.w25{
+      width:25%;
+    }
+  }
+  .title-wrap {
+    margin-bottom: 15px;
+
+  }
+  .task-value {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: OpenSans-SemiBold;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .task-group {
+    border-bottom: 1px solid rgba(30,81,46, 0.1);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .dosanddonts {
+    position: relative;
+    padding:0;
+  }
+  .dosanddonts img{
+    background-size: 100% 100%;
+    border-radius: 5px;
+  }
+  .dosanddonts .title,
+  .dosanddonts .info {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Regular";
+  }
+  .dosanddonts .info {
+    text-align: right;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-right:15px;
+  }
+  .dosanddonts .title {
+    top: 20px;
+    font-size: 16px;
+  }
+}
+.padl15{
+  padding-left:15px;
+}
+.right-aside{
+  padding-left: 60px !important;
+}
+.text-yellow {
+    color: #feb43f;
+}
+.text-red {
+    color: #e8553e;
+}
+.text-blue{
+  color: #4a88da;
+}

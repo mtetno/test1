@@ -1,0 +1,178 @@
+html, body {
+  background-color: #fff !important; 
+}
+.form-group label {
+  float: none;
+}
+#SectionWizardMarkup > .container{
+  margin-top: -25px !important;
+  padding-top: 25px !important;
+}
+.section-wizard {
+  .section-progress {
+    height: 35px;
+    background-image: linear-gradient(to left, #e1e0e0, #ebebeb);
+    box-shadow: 0px 1px 0 0 #ffffff;
+    border-radius: 0;
+    position: relative;
+    border: none;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    width:32.33%;
+    color: #6e7c93;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .section-progress::before {
+    content: "";
+    border-top: 18px solid transparent;
+    border-left: 12px solid #e1e0e0;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+  }
+  .section-progress-done {
+    background-image: linear-gradient(to left, #74ab40, #8cc258);
+    color: #ffffff;
+  }
+  .section-progress-done::before {
+    border-left: 12px solid #74ab40;
+  }
+  .section-progress:last-child::before {
+    display: none;
+  }
+  .section-progress:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .subsection-wizard {
+  .list-inline {
+    padding-bottom: 0px;
+    float: left;
+    width: 100%;
+    box-shadow: none;
+  }
+   .subsection-progress {
+    border: none;
+    padding: 0;
+   }
+    .subsection-progress {
+      .line-wrap {
+        width: 100%;
+        height: 8px;
+        background-image: linear-gradient(0deg,#f0f0f0,#ebebeb);
+        box-shadow: 0 1px 0 0 #fff, inset 0 2px 5px 0 rgba(29,26,22,.2);
+        position: absolute;
+        top: 65px;
+        right: 50%;
+      }
+      .circle-incomplete {
+        width: 30px;
+        height: 30px;
+        background-image: linear-gradient(0deg,#f0f0f0,#ebebeb);
+        box-shadow: 0 1px 0 0 #fff, inset 0 2px 5px 0 rgba(29,26,22,.2);
+        margin: 10px auto;
+        border-radius: 20px;
+        padding: 11px;
+        position: relative;
+        z-index: 2;
+      }
+      .circle-incomplete-in {
+        width: 9px;
+        height: 9px;
+        background-color: #5c369b;
+        border-radius: 5px;
+      }
+      .text {
+        font-size: 14px;        
+        color: rgb(48, 87, 138);
+        font-family: OpenSans-SemiBold;
+        text-transform: capitalize;
+      }
+    }
+    .subsection-progress.done {
+      .circle-incomplete {
+        background: #5c369b;
+      }
+      .circle-incomplete-in {
+        background: #a9d283;
+      }
+      .line-wrap {
+        background: #5c369b;
+      }
+    }
+    li.subsection-progress.text-center.list-group-item:first-child .line-wrap {
+      width: 0;
+    }
+  }
+  .question-status {
+    h1 {
+      font-family: 'Brandon Grotesque Black';
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      color: #5c369b;
+      margin-bottom: 5px;
+      margin-top:10px;
+    }
+    h1 span {
+      font-weight: bold;
+      color: #5c369b;
+    }
+    h2 {
+      font-size: 48px;
+      font-family: Brandon Grotesque Medium;
+      color: rgb(169, 210, 131);
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top:10px;
+    }
+    h3 {
+      font-family: 'Brandon Grotesque Black';
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      color: #c2c2c2;
+    }
+  }
+   @media (min-width: 768px){
+    #SectionWizardMarkup {
+       margin-top:65px;
+    }
+  }
+}
+.section-wizard .list-inline{
+  margin-left:0px;
+}
+.icon{
+      background-image: url('../../../styles/img/reward.png') ;
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+      display:inline-block;
+}
+.iconChange{
+      background-image: url('../../../styles/img/check.png') ;
+      background-repeat: no-repeat;
+      height: 20px;
+      width: 25px;
+      display:inline-block;
+}
+.questionnaire-form .custom-group{
+  opacity:0.3;
+  color: #031935;
+}
+.questionnaire-form .custom-group.active{
+  opacity:1;
+}
+.questionnaire-form .custom-group:hover{
+  opacity:1;
+}
+
+@media (min-width: 1200px){
+  .container {
+      width: 960px; 
+  }
+}

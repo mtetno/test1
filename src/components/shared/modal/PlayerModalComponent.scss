@@ -1,0 +1,179 @@
+.player-modal .acc-box{
+	background:#fff;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid #E3E9E9;
+	text-align: center;
+	position: relative;
+    top: 90px;
+    font-size: 13px;
+    color: rgb(77, 92, 123);
+    line-height: 1.2;
+    font-family: OpenSans-Regular;
+}
+.player-modal .acc-box .first-line{
+	color: #193753;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    line-height: 1.2;
+
+}
+.player-modal .acc-box .second-line{
+    color: #31568A;
+    font-size: 14px;
+    font-weight: bold;
+}
+.player-modal .mark-box{
+	text-align: center;
+    background: #88C053;
+    padding: 18px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #e3e9e9;
+    position: relative;
+    top: 90px;
+    font-size: 13px
+}
+.player-modal .mark-box.inactive {
+    background: #f2f6fe;
+    color: #1a2a4a;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(226, 233, 233);
+    border-radius: 5px;
+}
+.player-modal .content-heading{
+	margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgb(24, 55, 83);
+    text-transform: uppercase;
+    font-family: OpenSans-Semibold;
+
+}
+.player-modal .content-descp{
+	font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: rgb(77, 92, 123);
+}
+.player-modal .modal-body{
+	padding-top:0px;
+}
+.player-modal .main-heading{
+	padding: 10px 15px;
+	margin-bottom:15px;
+	border-bottom:1px solid #ddd;
+	color:#193654;
+}
+.player-modal .main-heading .first-head{
+    font-size: 16px;
+    font-family: 'Brandon Grotesque Medium';
+    color: rgb(24, 55, 83);
+    text-transform: uppercase;
+}
+.player-modal .main-heading .first-head span{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.player-modal .know-more{
+	background: #fff;
+    padding: 3px 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 13px;
+    color: rgb(77, 92, 123);
+    line-height: 1.2;
+    text-align: center;
+    font-family: OpenSans-Regular;
+}
+.player-modal .know-more span{
+	vertical-align:bottom;
+}
+.player-modal .left-side{
+	display: inline-block;
+	font-size: 12px;
+	color: #5D6C81;
+}
+.player-modal .right-side{
+	display: inline-block;
+    margin-left: 10px;
+    background: #fff;
+    padding: 2px 8px;
+    font-size: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor:pointer;
+    color: #5D6C81;
+}
+.player-modal .main-side{
+	float:right
+}
+.player-modal .mark-icon{
+	margin-right: 8px;
+    top: 1px;
+    position: relative;
+}
+.accupressure-point-wrap .wrapper {
+    height: 200px;
+    border: 1px solid;
+    text-align: center;
+    margin: 5px 0;
+    position:relative;
+}
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #361d6b;
+}
+
+.tooltip1 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #361d6b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 115%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #361d6b transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+}
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
+.redpoint{
+  display:inline-block;
+  height:5px;
+  width:5px;
+  line-height:16px;
+  text-align:center;
+  font-size:0.1em;
+  border-radius:16px;
+  color:#fff;
+  background:red;
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    cursor:pointer;
+}

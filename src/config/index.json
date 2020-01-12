@@ -1,0 +1,9 @@
+{
+  "dev": true,
+  "api": {
+    "oauth": "http://10.11.13.203:8069/api/authorization-service",
+    "usermanagement": "http://10.11.13.203:8069/api/user-service",
+    "questionnaire": "http://10.11.13.203:8069/api/questionnaire-service",
+    "dashboard": "http://10.11.13.203:8069/api/dashboard-service"
+  }
+}

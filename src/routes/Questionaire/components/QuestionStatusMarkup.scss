@@ -1,0 +1,146 @@
+.linear {
+  width: 103px;
+  top: 80px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34px;
+  background: linear-gradient(transparent,#74ab40);
+  left: 100px;
+}
+.wobble {
+  -webkit-animation-name: wobble; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: wobble;
+  animation-duration: 7s;
+  position: absolute;
+  top:110px;
+  right: 17%;
+  animation-iteration-count:infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes wobble {
+  from {top: 0;}
+  to {top: 0;}
+}
+
+/* Standard syntax */
+@keyframes wobble {
+  50%  {top: 0;}
+  30%  {
+    border-top: none;
+    background: linear-gradient(transparent, #74ab40);
+  }
+  100%  {
+    border-bottom: none;
+    background: linear-gradient(#74ab40, transparent);
+  }
+
+  50%  {top: 75%;}
+}
+
+
+@media screen and (max-width: 1025px){
+  .linear{
+    left:44px;
+  }
+}
+
+.btn-que.btn-toolbar{
+  margin-left:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.questionnaire-form .control-label{
+    font-size: 20px; 
+    font-size: 22px;
+  font-family: "Open Sans";
+  color: rgb(9, 47, 94);
+  font-weight: bold;  
+}
+.questionnaire-form div div.questionnaire-form .custom-group.form-group, .questionnaire-form div div div.custom-group.form-group:nth-child(2) {
+    padding-left: 30px !important;
+    margin-top: -10px;
+}
+.blue-avtar
+{
+  position:relative;
+  z-index:9;
+}
+.blue-avtar img
+{
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+
+.show-div
+{
+  position: absolute;
+  width: 150px;
+  margin: auto;
+  top: 15px;
+  left: 0;
+  right: 0;
+  background:url(../../../styles/img/avatar-green.png) no-repeat;
+  animation:heightincrease 10s linear infinite;
+  z-index:9;
+}
+.scanner1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin:auto;
+  animation: MoveUpDown 10s linear infinite;
+  height:100%;
+
+}
+.scanner1 img
+{
+  top: -101px;
+  width: 150px;
+}
+@keyframes MoveUpDown {
+  0%
+  {
+    top:0px;
+  }
+  50%
+  {
+    top:270px;
+  }
+  100%
+  {
+    top:0px;
+  }
+  
+}
+
+
+@keyframes heightincrease {
+  0% {
+    height: 0;
+  }
+  
+  50% {
+    height: 280px;
+  }
+  
+  100% {
+    height: 0px;
+  }
+  
+}
+#QuestionStatusMarkup h1{
+      font-size: 16px;
+      color: #000;
+      font-family: Brandon Grotesque Bold;
+}
+ #QuestionStatusMarkup h2{
+      font-size: 40px;
+      font-family: Brandon Grotesque Bold;
+}

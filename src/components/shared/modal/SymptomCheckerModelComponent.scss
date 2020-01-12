@@ -1,0 +1,90 @@
+.modal-content{
+	border-radius: 5px;
+    background-color: #f7f4fe;
+    box-shadow: 0 0 10.2px 4.8px rgba(0, 0, 0, 0.32);
+    height:auto;
+}
+
+.modal-header{
+	background-color: #361d6b;
+	color:#fff;
+	height: 35px;
+	padding: 5px 15px;
+}
+.modal-header .close{
+	color:#fff;
+}
+.modal-header h4{
+  font-family: Brandon Grotesque Medium;
+  font-size: 14px;
+  color:#fff;
+}
+.symptom .inner-body{
+  background-color: #fff;
+  height: 314px;
+  overflow: hidden;
+	}
+.symptom .inner-body .left-side img{
+	display: inline-block;
+}
+.symptom .inner-body .left-side{
+	text-align:center;
+	margin-top: 40px;
+	}
+.symptom .inner-body .right-side{
+  border-left: none;
+	padding:0px;
+  height: 300px;
+  overflow: auto;
+}
+.table-bordered{
+	border:none;
+	margin-bottom:0px;
+}
+.table-bordered>thead>tr>th{
+  border: 1px solid rgba(83, 131, 115, 0.13);
+  background:#ecf2ff;
+  font-family: Brandon Grotesque Medium;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #30578a;
+  text-transform: uppercase;
+}
+.table-bordered>tbody>tr>td{
+  border: 1px solid rgba(83, 131, 115, 0.13);
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  text-align: left;
+  color: #4d5c7b;
+  padding: 15px 10px;
+}
+.table>thead:first-child>tr:first-child>th{
+	border-left:none !important;
+}
+.table thead tr th:last-child {
+    border-right:none !important;
+}
+.table tbody tr td:first-child {
+    border-left:none !important;
+}
+.table tbody tr td:last-child {
+    border-right:none !important;
+}
+.icon-check{
+	font-size: 11px;
+    margin-right: 5px;
+    color: #5ab847;
+}
+.icon-cross{
+	font-size: 11px;
+    margin-right: 5px;
+    color: #e7553e;
+}
+.modal-header .close{
+  opacity:1;
+}
+.btn-ok{
+      top: 52px;
+    position: relative;
+}

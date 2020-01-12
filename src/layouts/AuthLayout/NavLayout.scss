@@ -1,0 +1,119 @@
+.custom-navbar.navbar.navbar-fixed-top {
+  box-shadow: 0px 2px 7px 0 rgba(2, 2, 2, 0.3);
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+}
+.custom-navbar.navbar.navbar-fixed-top .container-fluid {
+  padding: 0;
+}
+.custom-navbar.navbar.navbar-fixed-top .navbar-header {
+	background: #fff;
+	padding-left: 15px;
+}
+.custom-navbar.navbar.navbar-fixed-top .navbar-collapse.collapse {
+	background: linear-gradient(to right, #453793, #8939A8);
+	padding-right: 15px;
+}
+.custom-navbar.navbar.navbar-fixed-top .navbar-nav>li>a {
+	font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: none;
+}
+.menu-divider {
+  width: 1px;
+  height: 26px;
+  opacity: .5;
+  background-color: #201c38;
+  box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.2);
+  margin: 12px 0;
+}
+.navbar-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: #fff;
+  float: left;
+  margin: -5px 5px 2px 0;
+}
+.img-band{
+  margin-left:45px !important;
+  margin-right:45px;
+  padding:8px 15px;
+ }
+.notify{
+  padding: 3px;
+  top: 5px;
+  right: 7px;
+  font-size:10px;
+  background-color: #e8553e;
+  position:absolute;
+  border-radius:5px;
+}
+.notification-wrap .caret {
+  display: none;
+}
+.notification-wrap .dropdown-menu>li>a {
+  padding: 20px;
+}
+ul.nav.navbar-nav li.selected {
+  margin: 0 15px;
+  border-bottom:2px solid #fff
+}
+.menu-nav li.selected a{
+ padding:14px 0px;
+}
+#dropdown-no-caret{
+  padding : 16px 15px 13px; 
+}
+
+span.fa.fa-bell1.icon-18{
+  background : url("../../styles/img/bell_icon.png") no-repeat center bottom;
+  width:20px;
+  height:16px;
+}
+img.span-drop span.caret {
+    background : url("../../styles/img/bell_icon.png") no-repeat center bottom;
+    width:20px;
+    height:16px;
+    border:0;
+}
+.img-band img {
+    width: 100% !important;
+}
+.last-menu{
+  padding:0px 10px;
+}
+.navbar-right.navbar-nav>li>a{
+   padding: 15px 20px;
+}
+.last-menu ul{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    left: auto;
+    background: #8537a8;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding:0px;
+}
+.last-menu ul li a {
+    color: #fff;
+    font-family: 'Brandon Grotesque Bold';
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+.last-menu ul li a:hover {
+    color: #fff;
+    background: #8537a8;
+}
+.last-menu ul li a span {
+    margin-right: 10px;
+}

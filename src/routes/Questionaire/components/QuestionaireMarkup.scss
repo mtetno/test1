@@ -1,0 +1,84 @@
+html, body {
+  
+}
+.questionair-container {
+	  background-image: url('../../../styles/img/Bacground-Scene-questioner.png') ;
+	  background-repeat: no-repeat;
+      min-width:100%;
+      background-color: #161616;
+      height: 100vh;
+      background-size: 100% 100%, auto;
+      padding:0px;
+      margin-top: -25px;
+}
+.questioner-center{
+	position: relative;
+    top: 17%;
+    left: 24px;
+    background-color: #e7ecef;
+    border-radius: 30px 30px 30px 0px;
+    font-size: 21px;
+  	color: #4d5c7b;
+}
+.questioner-content{
+	padding:30px 15px 10px;
+    font-family: OpenSans-Regular;
+   font-size: 24px;
+   color: rgb(77, 92, 123);
+}
+.questioner-center .name{
+	font-weight: bold;
+	 color: #5d369b;
+}
+
+.questioner-character{
+    position: fixed;
+    left: 150px;
+    width: 300px;
+    bottom: 0;
+}
+.questioner-button{
+    font-size: 17.784px;
+    font-family: OpenSans-Regular;
+	border-radius: 20px;
+    background: #88c053;
+    border: 1px solid #88c053;
+    padding: 5px 15px;
+    color: #fff;
+    text-shadow: none;
+    float: right;
+    box-shadow: 7px 12.1px 20px 0 rgba(0, 0, 0, 0.09);
+    top: 210px;
+    position: relative;
+}
+.questioner-button:focus, .questioner-button:hover {
+    background: #88c053;
+    border: 1px solid #88c053;
+    color: #fff;
+}
+.questioner-button .fa{
+	position:relative;
+	top:2px;
+	margin-left:5px;
+}
+.questionnaire-form .control-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+#basic-nav-dropdown .caret{
+    border-style: solid!important;
+    border-width: .11em .11em 0 0!important;
+    content: "";
+    display: inline-block!important;
+    height: .5em!important;
+    left: 3px!important;
+    position: relative!important;
+    top: 6px!important;
+    -webkit-transform: rotate(134deg) !important;
+    -ms-transform: rotate(134deg) !important;
+    transform: rotate(134deg)!important;
+    vertical-align: top!important;
+    width: .5em!important;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}

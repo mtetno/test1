@@ -1,2 +1,0 @@
-ReactJS Two components communicating
-https://stackoverflow.com/questions/21285923/reactjs-two-components-communicating

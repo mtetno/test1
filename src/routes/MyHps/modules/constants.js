@@ -1,0 +1,13 @@
+import mirrorkey from 'mirrorkey';
+
+export default mirrorkey([
+  'RECOMMENDATION_REQUEST_BEGIN',
+  'GET_PHENO_END',
+  'GET_ARTICLE_END',
+  'GET_FAV_ARTICLE_END',
+  'SET_FAV_ARTICLE_END',
+  'UPLOAD_DOCUMENTS_END',
+  'GET_DOCUMENTS_END',
+  'GET_GRECOMMENDATION_END',
+  'GET_DOWNLOAD_DOCUMENT_END'
+]);

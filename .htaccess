@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^dynamicform.000webhostapp.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^dynamicform.000webhostapp.com$
+RewriteCond %{REQUEST_URI} !dist/
+RewriteRule (.*) dist/$1 [L]
+ 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^(.*) dist/index.html [NC,L]

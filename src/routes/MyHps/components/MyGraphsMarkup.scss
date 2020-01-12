@@ -1,0 +1,57 @@
+.center-content {
+  h1 {
+    font-family: "Brandon Grotesque Medium";
+    font-size: 22px;
+    font-weight: 500;
+    color: #30578a;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(30,81,46, 0.1);
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+  h1.secondary {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  ul.nav.nav-tabs {
+    border-bottom: 1px solid rgba(30,81,46, 0.1);
+  }
+  ul.nav.nav-tabs li {
+    margin: 0;
+    border-bottom: 2px solid transparent;
+  }
+  ul.nav.nav-tabs li.active {
+    border-bottom: 2px solid #503797;
+    margin-bottom: 0px;
+  }
+  ul.nav.nav-tabs li a {
+    font-family: "Brandon Grotesque Regular";
+    font-size: 14px;
+    color: #4d5c7b;
+    text-transform: uppercase;
+    border: none;
+  }
+  ul.nav.nav-tabs li.active a {
+    background-color: transparent;
+    font-weight:bold;
+    color: #1a2a4a;
+  }
+   .trendChart
+      {
+        .highcharts-background {
+          fill: #FFFFFF;
+          box-shadow: 10px 10px 5px #f10707; 
+        }
+        margin-top: 30px;
+       .highcharts-title tspan{
+         color: red;
+        }
+        .highcharts-credits{
+          display: none;
+        }
+          
+      }
+    
+  }
+ 

@@ -1,0 +1,49 @@
+
+.faq-container h1{
+    font-family: Brandon Grotesque Medium;
+    font-size: 22px;
+    font-weight: 500;
+    color: #30578a;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(30,81,46,.1);
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-bottom: 12px;
+    text-align:center;
+    }
+
+.question-content{
+   font-family: Brandon Grotesque Medium;
+    font-size: 17px;
+    font-weight: 500;
+    color: #30578a;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(30,81,46,.1);
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
+.Answer-content{
+   color: #676565;
+   font-size: 14px;
+   margin-bottom:20px;
+   text-align:justify;
+}
+.Answer-content .table{
+  margin-top:10px;
+  border:1px solid rgba(83,131,115,.13);
+}
+.Answer-content .table>tbody>tr>td {
+    border: 1px solid rgba(83,131,115,.13);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #4d5c7b;
+    padding: 10px;
+}
+.Answer-content .table>thead>tr>th{
+  font-size:14px;
+}
+.Answer-content .table>tbody>tr>td.sub-heading{
+    font-weight: bold;
+}

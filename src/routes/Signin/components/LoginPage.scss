@@ -1,0 +1,159 @@
+html, body {
+  height:100%;
+}
+
+.hps-heading{
+    color: #3c3c95;
+    font-size: 29px;
+    margin-top: 35px;
+}
+.hps-heading img{
+  display:inline-block;
+}
+.login_background{
+      background-image: url('./bg.png') ;
+      background-repeat: no-repeat;
+      min-width:100%;
+      background-color: #161616;
+      min-height:100%;
+      background-size: 100% 100%, auto;
+      padding:0px;
+}
+@media(max-width:767px){
+  .login_background{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.sign-up-btn{
+  border-radius: 23px;
+  background-color: #273039 !important;
+  box-shadow: 10px 17.3px 20px 0 rgba(0, 0, 0, 0.2);
+  background-image:none;
+  border-color:#273039;
+  text-shadow:none;
+  color:#fff;
+  font-family:Brandon Grotesque Medium;
+  font-size: 10px;
+  line-height: 2.31;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+.sign-up-btn:focus{
+  color:#fff;
+  outline: 0px !important;
+}
+.sign-up-btn:hover{
+  color:#fff !important;
+}
+.form-container{
+    background: linear-gradient(135deg,#87bef0,#5cbe9d);
+    margin-top: 35px;
+    width: 100%;
+    box-shadow: 5.3px 11.9px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px 50px;
+
+}
+
+.login_background .form-group{
+  margin-top: 35px;
+
+}
+
+.form-group h5{
+  float:  left;
+  color:  #fff;
+ font-size: 9px;
+}
+
+ .form-group label{
+  font-weight: 200;
+  color: #fff;
+  float: left;
+  font-size: 11px;
+  font-family: Brandon Grotesque Medium;
+
+}
+.form-signin .form-control {
+    height: 34px;
+    border-radius: 4px;
+    border: none;
+    background-color: #e4f2fe;
+    box-shadow: inset 0 0 10px 0 rgba(89,99,106,.15);
+}
+.form-signin h2{
+  font-family: Brandon Grotesque Regular;
+  font-size: 26px;
+  color: #ffffff;
+  line-height:1.5;
+}
+.form-signin p{
+  font-family: Brandon Grotesque Regular;
+  font-size: 14px;
+ color: #fff;
+}
+.has-feedback label~.form-control-feedback{
+  top:20px;
+}
+.media-button{
+  font-size:10px;
+  box-shadow: inset 0 0 10px 0 rgba(89, 99, 106, 0.15);
+  background-image:none;
+  text-shadow:none;
+  color:#fff;
+  height: 32px;
+  border-radius: 3px;
+  padding: 6px 6px;
+}
+.button-left{
+  padding-right:5px;
+}
+.button-right{
+  padding-left:5px;
+}
+.media-button span{
+  font-size: 12px;
+  margin-right: 4px;
+}
+.button-blue{
+   background-color: #395697;
+   border-color:#395697;
+}
+.button-blue:hover{
+  background-color: #395697;
+  border-color:#395697;
+  color:#fff;
+}
+.button-orange{
+   background-color: #e0492f;
+   border-color:#e0492f;
+}
+.button-orange:hover{
+   background-color: #e0492f;
+   border-color:#e0492f;
+   color:#fff;
+}
+.form-signin .forgot a{
+  font-size:14px;
+  color:#fff;
+  font-family: Brandon Grotesque Regular;
+  cursor:pointer;
+  text-decoration:none;
+  padding:0px;
+}
+.forgot{
+  padding: 0px;
+}
+.or{
+  color:#fff;
+  margin-bottom:10px;
+}
+.black-stripe{
+  height:auto;
+  top:82%;
+  background: black;
+  position: absolute;
+  width: 100%;
+}

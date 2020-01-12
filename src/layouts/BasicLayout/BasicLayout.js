@@ -1,0 +1,57 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import autobind from 'autobind-decorator';
+import { bindActionCreators } from 'redux';
+import './BasicLayout.scss';
+import NavLayout from './NavLayout';
+import NavLayoutBottom from '../BottomLayout/NavLayoutBottom';
+import { Col } from 'react-bootstrap';
+import actions from '../../routes/Signin/modules/actions';
+
+class BasicLayout extends React.Component {
+  constructor (props) {
+    super(props);
+  }
+  render () {
+    const { userDetails } = this.props.signin;
+    return (
+        <Col>
+          <Col>
+            <NavLayout userDetails={userDetails} signOut={this._signOut} />
+            <Col className='page-layout__viewport'>
+              {this.props.children}
+            </Col>
+          </Col>
+        </Col>
+    );
+  }
+
+  @autobind
+  _signOut (e) {
+    if (e) {
+      e.preventDefault();
+    }
+    this.props.actions.signOut();
+  }
+}
+BasicLayout.propTypes = {
+  children: PropTypes.node,
+  actions: PropTypes.shape({
+    signOut: PropTypes.func,
+  }),
+};
+
+const mapStateToProps = (state) => ({
+    signin: state.signin,
+  }),
+  mapDispatchToProps = (dispatch) => {
+    const
+      { signOut } = actions;
+
+    return {
+      actions: bindActionCreators({ signOut }, dispatch),
+    };
+  };
+
+export default connect(mapStateToProps, mapDispatchToProps)(BasicLayout);
