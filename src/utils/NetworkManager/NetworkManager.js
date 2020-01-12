@@ -114,7 +114,7 @@ const notifyResponse = (response, httpRequestObj) => {
   }
 }
 
-const formatResponse = (response, httpRequestObj) => {
+export const formatResponse = (response, httpRequestObj) => {
   const responseObject = {}
   responseObject.responseCode = response.status === undefined ? 500 : response.status
   responseObject.responseText =
@@ -150,7 +150,7 @@ export const getRequest = (httpRequestObj, callback) => {
   )
 }
 
-export const postRequest = (httpRequestObj, callback) => {
+export const postRequest = (httpRequestObj) => {
   if (validateRequest(httpRequestObj) === false) {
     Logger.error('Invalid http Request')
     return
@@ -163,20 +163,11 @@ export const postRequest = (httpRequestObj, callback) => {
     headers: httpRequestObj.headers,
   }
 
-  axios
-    .post(
-      process.env.REACT_APP_BASE_URL + httpRequestObj.urlPath,
-      httpRequestObj.body,
-      config
-    )
-    .then(
-      (response) => {
-        callback(formatResponse(response, httpRequestObj))
-      },
-      (error) => {
-        callback(formatResponse(error, httpRequestObj))
-      }
-    )
+  return axios.post(
+    process.env.REACT_APP_BASE_URL + httpRequestObj.urlPath,
+    httpRequestObj.body,
+    config
+  )
 }
 
 export const putRequest = () => {}

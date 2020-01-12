@@ -1,19 +1,22 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import createSagaMiddleware, { END } from 'redux-saga'
+import {createStore, applyMiddleware, compose} from 'redux'
+import createSagaMiddleware, {END} from 'redux-saga'
 import sagaMonitor from '@redux-saga/simple-saga-monitor'
-import DevTools from '../containers/DevTools'
 import rootReducer from '../reducers'
+import rootSaga from '../sagas'
 
 export default function configureStore(initialState) {
-  const sagaMiddleware = createSagaMiddleware({ sagaMonitor })
+  const sagaMiddleware = createSagaMiddleware({sagaMonitor})
+  const enhancers = []
+
+  let composeEnhancers = compose
+  if (typeof window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ === 'function') {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  }
 
   const store = createStore(
     rootReducer,
     initialState,
-    compose(
-      applyMiddleware(sagaMiddleware),
-      DevTools.instrument(),
-    ),
+    composeEnhancers(applyMiddleware(sagaMiddleware), ...enhancers)
   )
 
   if (module.hot) {
@@ -23,7 +26,8 @@ export default function configureStore(initialState) {
       store.replaceReducer(nextRootReducer)
     })
   }
-  store.runSaga = sagaMiddleware.run
+  // store.runSaga = sagaMiddleware.run
+  sagaMiddleware.run(rootSaga)
   store.close = () => store.dispatch(END)
   return store
 }

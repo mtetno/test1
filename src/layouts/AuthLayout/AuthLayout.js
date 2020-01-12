@@ -1,4 +1,4 @@
-import rules from './rbac-rules'
+import rules from '../../routes/rbac-rules'
 
 const check = (inputRules, role, action, data) => {
   const permissions = inputRules[role]

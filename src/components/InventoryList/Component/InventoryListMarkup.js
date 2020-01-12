@@ -3,7 +3,7 @@ import {Button, H4} from '@blueprintjs/core'
 import '@blueprintjs/core/lib/css/blueprint.css'
 import '@blueprintjs/icons/lib/css/blueprint-icons.css'
 import AppContext from '../../AppContext'
-import ValidateUserAccess from '../../../routes/ValidateUserAccess'
+import AuthLayout from '../../../layouts/AuthLayout/AuthLayout'
 import inventory from '../../../utils/Data/inventory'
 import './InventoryListMarkup.css'
 
@@ -25,7 +25,7 @@ const InventoryListMarkup = () => (
                 <th scope="row">{index + 1}</th>
                 <td>{item.title}</td>
                 <td>
-                  <ValidateUserAccess
+                  <AuthLayout
                     role={role}
                     perform="inventory:edit"
                     data={{
@@ -36,7 +36,7 @@ const InventoryListMarkup = () => (
                       <Button icon="refresh" intent="success" text="Reset" />
                     )}
                   />
-                  <ValidateUserAccess
+                  <AuthLayout
                     role={role}
                     perform="inventory:delete"
                     yes={() => (

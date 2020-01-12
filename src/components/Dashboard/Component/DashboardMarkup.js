@@ -1,8 +1,8 @@
 import React from 'react'
-import ValidateUserAccess from '../../../routes/ValidateUserAccess'
-import AdminDashboard from './AdminDashboard'
-import VisitorDashboard from './VisitorDashboard'
+import AuthLayout from '../../../layouts/AuthLayout/AuthLayout'
+import BasicLayout from '../../../layouts/BasicLayout/BasicLayout'
 
+import VisitorDashboard from './VisitorDashboard'
 import AppContext from '../../AppContext'
 
 function DashboardMarkup() {
@@ -10,10 +10,10 @@ function DashboardMarkup() {
     <AppContext.Consumer>
       {({role}) => (
         <div>
-          <ValidateUserAccess
+          <AuthLayout
             role={role}
             perform="dashboard-page:visit"
-            yes={AdminDashboard}
+            yes={BasicLayout}
             no={VisitorDashboard}
           />
         </div>

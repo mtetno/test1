@@ -1,13 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
 import {renderRoutes} from 'react-router-config'
 import {BrowserRouter} from 'react-router-dom'
 import routes from './routes/routes'
 import './index.css'
 import * as serviceWorker from './utils/serviceWorker'
+import configureStore from './store/configureStore'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const store = configureStore(window.__INITIAL_STATE__)
 
 ReactDOM.render(
-  <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 )
 

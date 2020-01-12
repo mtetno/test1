@@ -1,5 +1,6 @@
 import React from 'react'
 import autoBind from 'react-autobind'
+import {connect} from 'react-redux'
 import DashboardMarkup from '../Component/DashboardMarkup'
 import AppContext from '../../AppContext'
 
@@ -17,7 +18,8 @@ class Dashboard extends React.Component {
 
   componentDidMount() {
     /* eslint-disable */
-    const {role, id, email} = this.props.match.params
+    const {role, id, email} = this.props.appState.user
+    console.log(this.props.appState)
     this.setState({
       role,
       id,
@@ -44,6 +46,7 @@ class Dashboard extends React.Component {
           selectedNav,
           onSelectedNav: this.onSelectedNav,
           onLogout: this.onLogout,
+          history: this.props.history,
         }}
       >
         {role ? <DashboardMarkup /> : undefined}
@@ -52,4 +55,10 @@ class Dashboard extends React.Component {
   }
 }
 
-export default Dashboard
+const mapStateToProps = (state) => ({
+  appState: {
+    user: state.user ? state.user : {},
+  },
+})
+
+export default connect(mapStateToProps, undefined)(Dashboard)
